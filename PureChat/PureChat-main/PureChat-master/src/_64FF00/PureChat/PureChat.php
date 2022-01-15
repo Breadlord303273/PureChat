@@ -465,17 +465,17 @@ class PureChat extends PluginBase {
         if($xpappi->getTier($player) == "N/A"){
             $string = str_replace("{tier}", " ", $string);
         }
-        if($xpappi->getTier($player) == "Shadow"){
-            $string = str_replace("{tier}", " §cROOKIE§r ", $string);
+        if($xpappi->getTier($player) == "SHADOW"){
+            $string = str_replace("{tier}", " §cSHADOW§r ", $string);
         }
-        if($xpappi->getTier($player) == "Light"){
-            $string = str_replace("{tier}", " §8VETERAN§r ", $string);
+        if($xpappi->getTier($player) == "LIGHT"){
+            $string = str_replace("{tier}", " §8LIGHT§r ", $string);
         }
-        if($xpappi->getTier($player) == "Moon"){
-            $string = str_replace("{tier}", " §7PRO§r ", $string);
+        if($xpappi->getTier($player) == "MOON"){
+            $string = str_replace("{tier}", " §7MOON§r ", $string);
         }
-        if($xpappi->getTier($player) == "Sun"){
-            $string = str_replace("{tier}", " §9ELITE§r ", $string);
+        if($xpappi->getTier($player) == "SUN"){
+            $string = str_replace("{tier}", " §9SUN§r ", $string);
         }
 
         if ($message === null)
