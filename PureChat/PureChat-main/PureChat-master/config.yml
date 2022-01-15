@@ -3,6 +3,10 @@ version: 1.4.10-6
 default-factions-plugin: FactionsPro
 enable-multiworld-chat: false
 groups:
+  Default:
+    chat: '&e{level}&r&l{tier}&r&f{display_name}&r{prefix}&f: &f{msg}'
+    nametag: '&l{tier}&r{display_name}&r{prefix}'
+    worlds: []
   Guest:
     chat: '&e{level}&r&l{tier}&r&f{display_name}&r{prefix}&f: &f{msg}'
     nametag: '&l{tier}&r{display_name}&r{prefix}'
