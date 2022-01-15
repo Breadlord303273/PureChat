@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Breadlord303273/PureChat
+build-by-default: true
+branches:
+- main
+projects:
+  PureChat.PureChat-main.PureChat-master:
+    path: PureChat/PureChat-main/PureChat-master/
+...
