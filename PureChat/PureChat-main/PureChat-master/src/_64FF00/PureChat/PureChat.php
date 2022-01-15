@@ -36,7 +36,7 @@ class PureChat extends PluginBase {
           888  888    "Y8888P"        888  888        888        "Y8888P"   "Y8888P"
     */
 
-    const MAIN_PREFIX = ["§biNxt§aPureChat"];
+    const MAIN_PREFIX = ["§b§aPureChat"];
     
     /** @var Config $config */
     
@@ -455,33 +455,27 @@ class PureChat extends PluginBase {
      */
      
     public function applyPCTags($string, Player $player, $message, $levelName) {
-        // TODO
+ 
         
         $string = str_replace("{display_name}", $player->getDisplayName(), $string);
 		
         $string = str_replace("{level}", $player->getXPLevel(), $string);
         
-        $xpappi = \pocketmine\Server::getInstance()->getPluginManager()->getPlugin("iNxtXPLevels");
+        $xpappi = \pocketmine\Server::getInstance()->getPluginManager()->getPlugin("XPLevels");
         if($xpappi->getTier($player) == "N/A"){
             $string = str_replace("{tier}", " ", $string);
         }
-        if($xpappi->getTier($player) == "ROOKIE"){
+        if($xpappi->getTier($player) == "Shadow"){
             $string = str_replace("{tier}", " §cROOKIE§r ", $string);
         }
-        if($xpappi->getTier($player) == "VETERAN"){
+        if($xpappi->getTier($player) == "Light"){
             $string = str_replace("{tier}", " §8VETERAN§r ", $string);
         }
-        if($xpappi->getTier($player) == "PRO"){
+        if($xpappi->getTier($player) == "Moon"){
             $string = str_replace("{tier}", " §7PRO§r ", $string);
         }
-        if($xpappi->getTier($player) == "ELITE"){
+        if($xpappi->getTier($player) == "Sun"){
             $string = str_replace("{tier}", " §9ELITE§r ", $string);
-        }
-        if($xpappi->getTier($player) == "MASTER"){
-            $string = str_replace("{tier}", " §5MASTER§r ", $string);
-        }
-        if($xpappi->getTier($player) == "LEGENDARY"){
-            $string = str_replace("{tier}", " §6LEGENDARY§r ", $string);
         }
 
         if ($message === null)
