@@ -4,5 +4,5 @@ branches:
 - main
 projects:
   PureChat.PureChat-main.PureChat-master:
-    path: PureChat/PureChat-main/PureChat-master/
+    path: PureChat/
 ...
